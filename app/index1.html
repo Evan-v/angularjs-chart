@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="bower_components/highcharts/lib/jquery.min.js"></script>
+    <!--<script src="bower_components/moment/moment.js"></script>-->
+    <script src="bower_components/highcharts/lib/highcharts.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/index1.js"></script>
+    <title>My Demo 1</title>
+    <script>
+
+
+//            setTimeout(function(){
+//                var series=chart.series;
+//                while(series.length > 0) {
+//                    series[0].remove(false);
+//                }
+//                chart.redraw();
+//            },2000);
+
+            // add new series for the chart
+//            setTimeout(function(){
+//                chart.addSeries({
+//                    id:1,
+//                    name: "gloomyfish",
+//                    data: [1,2,3]
+//                }, false);
+//                chart.addSeries({
+//                    id:2,
+//                    name: "wang-er-ma",
+//                    data: [5,2,1]
+//                }, false);
+//                chart.addSeries({
+//                    id:3,
+//                    name: "zhang-san",
+//                    data: [4,8,6]
+//                }, false);
+//
+//                chart.redraw();
+//            },2000);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div id="my_container" style="width:100%; overflow-x: scroll"></div>
+<div id="btn-group">
+    <button type="button" id="clear-button" ng-click="cleardata()">Clear</button>
+    <button type="button" id="refresh-button"> Redraw</button>
+    <button type="button" id="addbutton" > littleRedraw</button>
+    <input type="text" id="in1" ng-model="startnum" placeholder="start" ng-change="getsValue()">
+    <input type="text" ng-model="endnum" placeholder="end"  ng-change="geteValue()">
+    <button ng-click="startback()" id="backbtn">initial data</button>
+</div>
+
+
+<iframe noresize name="right" src="index.html" ></iframe>
+<a href="https://www.baidu.com" target="right">12</a>
+</body>
+</html>
